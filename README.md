@@ -25,5 +25,23 @@ rm /etc/nginx/sites-enabled/default
 ln -s /etc/nginx/sites-available/server.conf /etc/nginx/sites-enabled/server
 service nginx start
 ````
+Download and unzip the following files and place them in /var/www
+* https://codeload.github.com/IronSummitMedia/startbootstrap-4-col-portfolio/zip/v1.0.3 and rename it to "bootstrap".
+* https://codeload.github.com/angularjs-de/angularjs-tutorial-code/zip/gh-pages and rename it to "angularjs".
+* https://code.angularjs.org/1.4.3/angular-1.4.3.zip 
+
+To install Slim Framework we're going to use the command line again.
+````php
+cd /var/www
+curl -sS https://getcomposer.org/installer | php
+php composer.phar require slim/slim
+````
+In the last step we have to define crontab. To do so:
+````
+crontab -e
+````
+And add these lines to the file:
+````
+````
 
 ## Future?
