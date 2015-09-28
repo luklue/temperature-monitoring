@@ -14,6 +14,16 @@ cd wiringPi
 git pull origin
 ./build
 cd
-´´´´
+````
+Now we're going to replace some files. First of all replace the nginx.conf and the server.conf
+
+You can find these files in the folder /etc
+
+Now disable the default server and enable our new server:
+````php
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/server.conf /etc/nginx/sites-enabled/server
+service nginx start
+````
 
 ## Future?
