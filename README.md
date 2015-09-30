@@ -28,6 +28,8 @@ service nginx start
 Download and unzip the following files and place them in /var/www
 * https://codeload.github.com/IronSummitMedia/startbootstrap-4-col-portfolio/zip/v1.0.3 and rename it to "bootstrap".
 * https://codeload.github.com/angularjs-de/angularjs-tutorial-code/zip/gh-pages and rename it to "angularjs".
+* https://codeload.github.com/masayuki0812/c3/zip/0.4.10 and rename it to "c3".
+* https://codeload.github.com/mbostock/d3/zip/master and rename it to "d3".
 * https://code.angularjs.org/1.4.3/angular-1.4.3.zip 
 
 To install Slim Framework we're going to use the command line again.
