@@ -7,6 +7,7 @@ This software is ideal to watch the temperature at many different points in your
 * Webinterface
 * Graphical presantation
 * Renamable sensor names
+* Hardware start, stop button (not necessary)
 * etc.
 
 ## Used hardware
