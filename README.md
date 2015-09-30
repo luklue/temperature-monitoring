@@ -40,8 +40,12 @@ In the last step we have to define crontab. To do so:
 ````
 crontab -e
 ````
-And add these lines to the file:
+And add these lines to the end of the file:
 ````
+*/15    *       *       *       *       python /var/www/Temperaturauswertung/activeTrueFalse.py
+@reboot sudo sh ./start.sh
+@reboot sudo python /var/www/Temperaturauswertung/checkHardwareButton.py
+@reboot sudo python /var/www/Temperaturauswertung/writeSensorNames.py
 ````
 
 ## Future?
