@@ -1,12 +1,12 @@
 # Temperature monitoring
 
 ## Use case scenario
-
+This software is ideal to watch the temperature at many different points in your house, in a greenhouse, in a server, etc. It shows you clear data, is easy to install, is easy to extend and you can modify it as much as you want. 
 ## Features
 * Cyclical temperature monitoring
 * Webinterface
 * Graphical presantation
-* Renameble sensor names
+* Renamable sensor names
 * etc.
 
 ## Used hardware
@@ -28,7 +28,7 @@ Now we're going to replace some files. First of all replace the nginx.conf and t
 You can find these files in the folder /etc
 
 Now disable the default server and enable our new server:
-````php
+````
 rm /etc/nginx/sites-enabled/default
 ln -s /etc/nginx/sites-available/server.conf /etc/nginx/sites-enabled/server
 service nginx start
