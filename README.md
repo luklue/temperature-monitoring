@@ -1,10 +1,17 @@
-# temperature-monitoring
+# Temperature monitoring
 
 ## Use case scenario
+
 ## Features
+* Cyclical temperature monitoring
+* Webinterface
+* Graphical presantation
+* Renameble sensor names
+* etc.
 ## Used hardware
+Raspberry Pi 2, some wires, some resistors and a 1-wire temperature sensor (DS18B20)
 ## General Setup
-First of all you need to install a distribution on your Raspberry Pi. The distribution I used and this software was tested was Hypriot OS, but feel free to download and test another distribution and write a short post if that works aswell. When you're finished, you can continue on the command line (with sudo privileges):
+First of all you need to install a distribution on your Raspberry Pi. The distribution I used and this software was tested on was Hypriot OS, but feel free to download and test any other distribution and write a short post if that works aswell. When you're finished, you can continue on the command line (with sudo privileges):
 ````
 apt-get update
 apt-get upgrade
