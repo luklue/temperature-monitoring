@@ -60,6 +60,8 @@ And add these lines to the end of the file:
 ````
 
 ## Future?
+* Easy way to change cycle duration?
 * Save data on an external USB stick?
 * Use some database to see min, max, etc. temperature (InfluxDB?)?
 * Create some kind of hardware to sell this software as a product?
+If you are able to and want to add some of these features, feel free to do it.
