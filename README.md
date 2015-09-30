@@ -8,6 +8,7 @@
 * Graphical presantation
 * Renameble sensor names
 * etc.
+
 ## Used hardware
 Raspberry Pi 2, some wires, some resistors and a 1-wire temperature sensor (DS18B20)
 ## General Setup
