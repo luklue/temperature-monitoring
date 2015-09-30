@@ -1,7 +1,6 @@
 # Temperature monitoring
 
-![Bild](http://www.reuk.co.uk/OtherImages/connect-multiple-ds18b2-i2c-sensors-raspberry-pi.jpg)
-![Bild](http://www.reuk.co.uk/OtherImages/connect-multiple-ds18b2-i2c-sensors-raspberry-pi.jpg)
+![Bild](http://shares.lukaslueck.de/s#915dfca3-f2b4-4d1e-b276-d94459ea18c8/lukas-lueck.clouddrive.lukaslueck.de/Screenshot.png)
 
 ## Use case scenario
 This software is ideal to watch the temperature at many different points in your house, in a greenhouse, in a server, etc. It shows you clear data, is easy to install, is easy to extend and you can modify it as much as you want. 
