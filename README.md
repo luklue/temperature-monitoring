@@ -1,6 +1,6 @@
 # Temperature monitoring
 
-![Bild](http://shares.lukaslueck.de/api/cloud/1/drive/lukas-lueck.clouddrive.lukaslueck.de/sharedLinks/id/915dfca3-f2b4-4d1e-b276-d94459ea18c8/data/Screenshot.png)
+![Webinterface](http://shares.lukaslueck.de/api/cloud/1/drive/lukas-lueck.clouddrive.lukaslueck.de/sharedLinks/id/915dfca3-f2b4-4d1e-b276-d94459ea18c8/data/Screenshot.png)
 
 ## Use case scenario
 This software is ideal to watch the temperature at many different points in your house, in a greenhouse, in a server, etc. It shows you clear data, is easy to install, is easy to extend and you can modify it as much as you want. 
@@ -18,6 +18,8 @@ Raspberry Pi 2, some wires, some resistors and a 1-wire temperature sensor (DS18
 * http://www.it-hellmann.de/wp-content/uploads/2015/07/steckbrett.png
 * http://www.peatonet.com/wp/wp-content/uploads/2014/08/PinoutRaspberry-1.jpeg
 * http://www.reuk.co.uk/OtherImages/connect-multiple-ds18b2-i2c-sensors-raspberry-pi.jpg
+
+![Wiring](http://shares.lukaslueck.de/api/cloud/1/drive/lukas-lueck.clouddrive.lukaslueck.de/sharedLinks/id/3d8b23fb-63e3-4b1e-9765-cf1a188fc6c0/data/IMG_20150930_140614.jpg?width=800&height=800)
 
 ## General Setup
 First of all you need to install a distribution on your Raspberry Pi. The distribution I used and this software was tested on was Hypriot OS, but feel free to download and test any other distribution and write a short post if that works aswell. When you're finished, you can continue on the command line (with sudo privileges):
