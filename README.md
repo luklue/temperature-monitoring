@@ -1,5 +1,8 @@
 # Temperature monitoring
 
+![Bild](http://www.reuk.co.uk/OtherImages/connect-multiple-ds18b2-i2c-sensors-raspberry-pi.jpg)
+![Bild](http://www.reuk.co.uk/OtherImages/connect-multiple-ds18b2-i2c-sensors-raspberry-pi.jpg)
+
 ## Use case scenario
 This software is ideal to watch the temperature at many different points in your house, in a greenhouse, in a server, etc. It shows you clear data, is easy to install, is easy to extend and you can modify it as much as you want. 
 ## Features
@@ -12,6 +15,11 @@ This software is ideal to watch the temperature at many different points in your
 
 ## Used hardware
 Raspberry Pi 2, some wires, some resistors and a 1-wire temperature sensor (DS18B20)
+## Wiring
+* http://www.it-hellmann.de/wp-content/uploads/2015/07/steckbrett.png
+* http://www.peatonet.com/wp/wp-content/uploads/2014/08/PinoutRaspberry-1.jpeg
+* http://www.reuk.co.uk/OtherImages/connect-multiple-ds18b2-i2c-sensors-raspberry-pi.jpg
+
 ## General Setup
 First of all you need to install a distribution on your Raspberry Pi. The distribution I used and this software was tested on was Hypriot OS, but feel free to download and test any other distribution and write a short post if that works aswell. When you're finished, you can continue on the command line (with sudo privileges):
 ````
