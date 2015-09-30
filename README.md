@@ -13,7 +13,7 @@ This software is ideal to watch the temperature at many different points in your
 * etc.
 
 ## Used hardware
-Raspberry Pi 2, some wires, some resistors and a 1-wire temperature sensor (DS18B20)
+Raspberry Pi 2, some wires, some resistors and a 1-wire temperature sensor [DS18B20](http://www.amazon.de/DS18B20-Digital-Temperature-Sensor-Thermperatursensor/dp/B00BJY8S8C)
 ## Wiring
 * http://www.it-hellmann.de/wp-content/uploads/2015/07/steckbrett.png
 * http://www.peatonet.com/wp/wp-content/uploads/2014/08/PinoutRaspberry-1.jpeg
