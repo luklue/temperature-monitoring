@@ -51,3 +51,6 @@ And add these lines to the end of the file:
 ````
 
 ## Future?
+* Save data on an external USB stick?
+* Use some database to see min, max, etc. temperature (InfluxDB?)?
+* Create some kind of hardware to sell this software as a product?
