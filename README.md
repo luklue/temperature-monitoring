@@ -56,6 +56,10 @@ cd /var/www
 curl -sS https://getcomposer.org/installer | php
 php composer.phar require slim/slim
 ````
+I know, there is a better way but right now we have to give the user var-www sudo previleges. To do so run ````visudo```` and add the following line to the end (make sure to add a blank line!!):
+````
+www-data  ALL = NOPASSWD: ALL
+````
 In the last step we have to define crontab. To do so:
 ````
 crontab -e
