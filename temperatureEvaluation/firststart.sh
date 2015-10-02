@@ -10,8 +10,6 @@ chmod o+rwx /var/www/temperature-monitoring/temperatureEvaluation/projectname.js
 chmod o+rwx /var/www/temperature-monitoring/temperatureEvaluation/readTemperature.py
 chmod o+rwx /var/www/temperature-monitoring/temperatureEvaluation/sensornames.json
 chmod o+rwx /var/www/temperature-monitoring/temperatureEvaluation/start.sh
-chmod o+rwx /var/www/temperature-monitoring/temperatureEvaluation/startButton
-chmod o+rwx /var/www/temperature-monitoring/temperatureEvaluation/stopButton
+chmod o+rwx /var/www/temperature-monitoring/temperatureEvaluation/startButton.py
+chmod o+rwx /var/www/temperature-monitoring/temperatureEvaluation/stopButton.py
 chmod o+rwx /var/www/temperature-monitoring/temperatureEvaluation/writeSensorNames.py
-
-fi
