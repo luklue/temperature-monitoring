@@ -1,0 +1,137 @@
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Lukas Lück" >
+    <title>Temperaturverlauf</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="design.css">
+    <!-- Load c3.css -->
+    <link href="/c3/c3.css" rel="stylesheet" type="text/css">
+    <!-- Load d3.js and c3.js -->
+    <script src="/d3/d3.min.js" charset="utf-8"></script>
+    <script src="/c3/c3.min.js"></script>
+</head>
+<body>
+    <div class="container" ng-controller="SensornamesCtrl">
+        <div class="panel panel-success" ng-show="status">
+            <div class="panel-heading">
+                <h1>Temperaturverlauf</h1>
+            </div>
+            <div class="panel-body">
+                <div id="chart"></div>
+            </div>
+        </div>
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <button type="button" class="btn btn-success spoiler-trigger" data-toggle="collapse">
+                <i class="glyphicon glyphicon-cog"></i> Erweiterte Einstellungen
+                </button>
+            </div>
+            <div class="panel-collapse collapse out">
+                <div class="panel-body">
+                    <table class="table" ng-show="status">
+                        <tr>
+                            <p ng-show="status">Um die Sensornamen zu ändern bitte zuerst die aktuelle Aufzeichnung beenden. </br></p>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="" role="button" class="btn btn-success" ng-click="reload()">
+                                Aufzeichnung stoppen <i class="glyphicon glyphicon-off"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <table class="table" ng-hide="status">
+                        <tr>
+                            <td>
+                                <h4>Sensor ID</h4>
+                            </td>
+                            <td>
+                                <h4>Sensor Name</h4>
+                            </td>
+                        </tr>
+                        <tr ng-repeat="sensorname in sensornames">
+                            <td>
+                                {{sensorname.id}}
+                            </td>
+                            <td>
+                                <form role="form" class="form-inline"> 
+                                    <div class="form-group has-feedback has-feedback-left">
+                                        <label class="control-label sr-only">Username</label>
+                                        <div class="inline-feedback">
+                                            <input type="text" class="form-control" name="myField" ng-model="sensorname.name" required / />
+                                            <i class="form-control-feedback glyphicon glyphicon-pencil"></i>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="divContainer" ng-hide="status">
+                        <div id="div1">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <form role="form" class="form-inline"> 
+                                            <div class="form-group has-feedback has-feedback-left">
+                                                <label class="control-label sr-only">Username</label>
+                                                <div class="inline-feedback">
+                                                    Projektname
+                                                    <input type="text" ng-attr-placeholder="Projektname" class="form-control" name="myField" ng-model="projectname.name">
+                                                    <i class="form-control-feedback glyphicon glyphicon-paperclip"></i>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <a href="" role="button" class="btn btn-success" ng-click="putData()">
+                                        Mit aktueller Konfiguration starten <i class="glyphicon glyphicon-off"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <button type="button" class="btn btn-success spoiler-trigger" data-toggle="collapse">
+                <i class="glyphicon glyphicon-list-alt"></i> Downloadecke
+                </button>
+            </div>
+            <div class="panel-collapse collapse out">
+                <div class="panel-body">
+                    <div class="input-group">
+                        <input type="text" placeholder="Etwas suchen" ng-model="search" class="form-control"/>
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </span>
+                    </div>
+                    <br>
+                    <p ng-repeat="download in downloads | filter:search"><a href="/temperature-monitoring/temperatureEvaluation/readings/{{download.name}}" role="button" class="btn btn-default btn-sm">{{download.name}}</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <center>
+                    <p><a href="https://github.com/luklue/temperature-monitoring">Get Help on GitHub</a></p>
+                    <p>Von Lukas Lück für die Datus AG erstellt</p>
+                </center>
+            </div>
+        </div>
+    </div>
+<script src="/angular-1.4.3/angular.js"></script>
+<script src="temperature-monitoring/app.js"></script>
+<script src="temperature-monitoring/chart.js"></script>
+<script src="/bootstrap/js/jquery.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="temperature-monitoring/spoiler.js"></script>
+</body>
+</html>
