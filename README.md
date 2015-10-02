@@ -63,7 +63,7 @@ crontab -e
 And add these lines to the end of the file:
 ````
 */15    *       *       *       *       python /var/www/temperature-monitoring/temperatureEvaluation/activeTrueFalse.py
-@reboot sudo sh ./var/www/temperature-monitoring/temperatureEvaluation/start.sh
+@reboot sudo sh /var/www/temperature-monitoring/temperatureEvaluation/start.sh
 @reboot sudo python /var/www/temperature-monitoring/temperatureEvaluation/checkHardwareButton.py
 @reboot sudo python /var/www/temperature-monitoring/temperatureEvaluation/writeSensorNames.py
 ````
